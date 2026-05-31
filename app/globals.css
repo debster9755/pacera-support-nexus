@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+:root {
+  --color-ink-950: #08111f;
+  --color-ink-900: #10213a;
+  --color-ink-800: #183154;
+  --color-surface-0: #f7f7f2;
+  --color-surface-100: #e7ecf3;
+  --color-surface-200: #d6dee8;
+  --color-mint-400: #73d2b6;
+  --color-mint-500: #40b99b;
+  --color-gold-400: #f2c665;
+  --color-gold-500: #dfb24c;
+  --color-coral-400: #f48b79;
+  --color-coral-500: #de6d59;
+  --color-sky-400: #7ac8ff;
+  --color-sky-500: #48a9f8;
+}
+
+@theme inline {
+  --font-sans: "Avenir Next", "Segoe UI", "Helvetica Neue", sans-serif;
+  --font-mono: "SFMono-Regular", "Consolas", "Liberation Mono", monospace;
+  --color-background: var(--color-ink-950);
+  --color-foreground: var(--color-surface-0);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background:
+    radial-gradient(circle at top left, rgba(122, 200, 255, 0.18), transparent 32%),
+    radial-gradient(circle at top right, rgba(242, 198, 101, 0.18), transparent 24%),
+    linear-gradient(180deg, #08111f 0%, #0f1c30 45%, #10213a 100%);
+  color: var(--color-surface-0);
+  font-family: "Avenir Next", "Segoe UI", "Helvetica Neue", sans-serif;
+}
+
+::selection {
+  background: rgba(242, 198, 101, 0.35);
+}
+
+.card-glow {
+  box-shadow:
+    0 18px 40px rgba(8, 17, 31, 0.32),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.grid-lines {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 36px 36px;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
