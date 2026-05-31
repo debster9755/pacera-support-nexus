@@ -8,6 +8,11 @@ Pacera Support Nexus is a high-fidelity mock support-operations application desi
 
 This repository is currently implemented through **Phase 1** of the agreed plan: project setup, deterministic mock-data generation, KPI selectors, trend detection, and a verification shell that proves the data layer before the polished dashboard is built.
 
+## Description
+
+- Repository: https://github.com/debster9755/pacera-support-nexus
+- Live demo: https://pacera-support-nexus.vercel.app
+
 ## Why this app exists
 
 The app is meant to demonstrate:
